@@ -1,0 +1,292 @@
+  @font-face {
+    font-family:"copperplate";
+    src: url("Copperplate\ Gothic\ Bold\ Regular.ttf");
+}
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-brand{
+    font-family: copperplate;
+}
+.serving{
+    font-size: .1em;
+}
+.collapse.navbar-collapse{
+    justify-content: flex-end;
+}
+.jumbotron.img-fluid{
+    background-image: url("images/jumbotron-hd.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+}
+.logo-container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
+.logo.img-fluid{
+    position: relative;
+    /* border: solid red 1px; */
+    height: 10em;
+    width: 15em;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+}
+.row.text-center.text-lg-left{
+    margin: 0 .5%;
+}
+.call-to-action{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+}
+.contact-number{
+    /* font-family: 'Alegreya', serif; */
+    font-family: "roboto", sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: light;
+    color: rgb(0, 123, 255);
+}
+#a-link:hover{
+    text-decoration: none;
+    /* color: red; */
+    color: #555;
+}
+.contact-form{
+    display: block;
+    text-align: center;
+}
+.form-group{
+    margin: 0 20%;
+}
+.btn.btn-primary{
+    margin: 2% 30% 8% 30%;
+}
+.btn.btn-primary:hover{
+    background: #555;
+}
+.img-fluid.img-thumbnail{
+    position: relative;
+    text-align: center;
+    opacity: .3;
+    padding: 0;
+}
+.thumb-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* font-family: "roboto", sans-serif; */
+    font-weight: 400;
+    /* font-family: 'Alegreya', serif; */
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 100%;
+    font-weight: 500;
+    font-family: copperplate;
+}
+.py-4.bg-dark.text-white-50{
+    background: blue;
+}
+/* Scroll Button */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 80px; 
+    right: 10px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(0, 123, 255); 
+    color: white;
+    cursor: pointer; 
+    padding: 2px 10px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+  }
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/************************************************/
+    /* Footer */
+    .container-footer{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0 0;
+        font-size: .7em;
+    }
+    .contact-number-footer{
+        /* font-family: 'Alegreya', serif; */
+        font-family: "roboto", sans-serif;
+        /* font-size: .5em; */
+        text-align: center;
+        font-weight: light;
+        color: rgb(0, 123, 255);
+    }
+    /* .container{
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    #sticky-footer{
+        /* z-index: 99; */
+        bottom: 0;
+        width: 100%;
+        padding: 0; 
+        margin: 0;
+    }
+/************************************************/
+    /* Media Page */
+.media-call-to-action{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5%;
+}
+.media-player{
+    height: 300px;
+    margin: 0 0 1% 0;
+    text-align: center;
+}
+/************************************************/
+    /*Links Page*/
+#sticky-footer-links{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.links{
+    margin: 5% 0 0 0;
+}
+.links-heading{
+    margin: 0;
+}
+/************************************************/
+    /*About Us Page*/
+.about-call-to-action{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5% 5% 1% 5%;
+}
+.about-story{
+    font-size: .8em;
+    /* border: solid green 1px; */
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0 0 10%;
+    font-family: copperplate;
+}
+/************************************************/
+    /*Contact Page*/
+#sticky-footer-contact{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.contact-call-to-action{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5% 5% 1% 5%;
+}
+.contact-info{
+    /* border: solid green 1px; */
+    line-height: 50px;
+    width: 80%;
+    text-align: center;
+    margin: 40px 0 0 10%;
+    font-family: copperplate;
+}
+.media-links{
+    margin: 2% 0 0 0;
+    letter-spacing: 5px;
+}
+/************************************************/
+/*Privacy Page*/
+    h6{
+        margin:0;
+}
+.privacy-policy-text{
+    font-size: .5em;
+    text-align: left;
+}
+.privacy-container{
+    font-size: .8em;
+    /* border: solid green 1px; */
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0 0 25%;
+    font-family: copperplate;
+    justify-items: center;
+}
+/***************************************************/
+@media screen and (max-width: 600px) {
+    .navbar-brand{
+        font-size: .8em;
+    }
+    .serving{
+        font-size: .5em;
+    }
+    .jumbotron.img-fluid{
+        background-image: url("original-images/jumbotron-hd.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .logo.img-fluid{
+        position: relative;
+        /* border: solid red 1px; */
+        height: 10em;
+        width: 15em;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+    }
+    #sticky-footer{
+        font-size: 1em;
+    }
+    .contact-number-footer{
+        font-size: 1em;
+    }
+    /* .privacy-policy{
+        font-size: .4em;
+    } */
+    h6{
+        font-size: 2em;
+    }
+    .privacy-container{
+        font-size: .8em;
+        /* border: solid green 1px; */
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 10px 0 0 10%;
+        font-family: copperplate;
+        justify-items: center;
+    }
+}
