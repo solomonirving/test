@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
     font-family:"copperplate";
     src: url("Copperplate\ Gothic\ Bold\ Regular.ttf");
 }
@@ -21,7 +21,7 @@ body{
     justify-content: flex-end;
 }
 .jumbotron.img-fluid{
-    background-image: url("images/jumbotron-hd.jpg");
+    background-image: url("images/jumbotron-sm.webp"), url("images/jumbotron-sm.jpg");
     background-position: center;
     background-size: cover;
     height: 400px;
@@ -72,9 +72,14 @@ body{
 }
 .form-group{
     margin: 0 20%;
+    text-align: center;
 }
+
 .btn.btn-primary{
     margin: 2% 30% 8% 30%;
+}
+.btn.btn-primary.btn-send{
+    margin: 2% 0 8% 0;
 }
 .btn.btn-primary:hover{
     background: #555;
@@ -152,6 +157,14 @@ body{
         padding: 0; 
         margin: 0;
     }
+    #sticky-footer-2{
+        /* z-index: 99; */
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0; 
+        margin: 0;
+    }
 /************************************************/
     /* Media Page */
 .media-call-to-action{
@@ -174,19 +187,27 @@ body{
     width: 100%;
 }
 .links{
-    margin: 5% 0 0 0;
+    margin: 20px 0 0 0;
 }
 .links-heading{
     margin: 0;
 }
 /************************************************/
-    /*About Us Page*/
+    /*About Me Page*/
 .about-call-to-action{
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5em;
     text-align: center; 
     font-weight: 900;
     margin: 5% 5% 1% 5%;
+}
+.about-call-to-action-2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5% 5% 1% 3%;
 }
 .about-story{
     font-size: .8em;
@@ -197,8 +218,71 @@ body{
     margin: 10px 0 0 10%;
     font-family: copperplate;
 }
+#sticky-footer-about{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/************************************************/
+    /*Services Page*/
+
+    #sticky-footer-services{
+        /* z-index: 99; */
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0;  
+        margin: 0;
+    }
+    .services-category{
+        font-family: copperplate;
+        font-size: 1.7em;
+        font-weight: bolder;
+    }
+    .services-category-2{
+        font-family: copperplate;
+        font-size: 1.7em;
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    .services-story{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .8em;
+        text-align: center;
+        /* border: solid green 1px; */
+        width: 80%;
+        height: 100%;
+        margin: 25px 5% 0 10%;
+        font-family: copperplate;
+    }
+    .question{
+        font-size: 1.1em;
+        line-height: 2em;
+        text-decoration: underline;
+    }
+    .services-footnote{
+        margin-top: 30px;
+        font-size: .5em;
+        font-style: italic;
+    }
+    /* .list{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    ul{
+        margin: 0%;
+        padding-left: 20%;
+        text-align: left;
+    }
+
 /************************************************/
     /*Contact Page*/
+
 #sticky-footer-contact{
     position: absolute;
     bottom: 0;
@@ -216,7 +300,7 @@ body{
     line-height: 50px;
     width: 80%;
     text-align: center;
-    margin: 40px 0 0 10%;
+    margin: 20px 0 0 10%;
     font-family: copperplate;
 }
 .media-links{
@@ -228,19 +312,79 @@ body{
     h6{
         margin:0;
 }
+/* .privacy-call-to-action-2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    width: 80%;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5% 5% 1% 3%;
+} */
+.privacy-call-to-action-2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    width: auto;
+    text-align: center; 
+    font-weight: 900;
+    margin: 5% 0 1% 0;
+}
 .privacy-policy-text{
     font-size: .5em;
-    text-align: left;
+    text-align: center;
 }
 .privacy-container{
+    text-align: center;
     font-size: .8em;
     /* border: solid green 1px; */
-    width: 50%;
+    width: auto;
     height: auto;
     text-align: center;
-    margin: 10px 0 0 25%;
+    /* margin: 10px 0 0 25%; */
     font-family: copperplate;
-    justify-items: center;
+    /* justify-items: center; */
+}
+/************************************************/
+/*Foundation*/
+.foundation-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20%;
+}
+.foundation-story{
+    font-size: .8em;
+    text-align: center;
+    /* border: solid green 1px; */
+    /* width: 80%; */
+    height: 100%;
+    font-family: copperplate;
+    margin: 25px 0 0 0;
+
+}
+.foundation-container{
+    line-height: 1.5em;
+}
+.donate{
+    text-align: center;
+    font-size: 1.1em;
+}
+.donate-button{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 2% 0 2% 0;
+}
+.foundation-contact-email{
+    padding: 0 0 16px 0;
+}
+.foundation-question{
+    font-size: 1.4em;
+    line-height: 2em;
+    text-decoration: underline;
+}
+#sticky-footer-foundation{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 /***************************************************/
 @media screen and (max-width: 600px) {
@@ -251,7 +395,7 @@ body{
         font-size: .5em;
     }
     .jumbotron.img-fluid{
-        background-image: url("original-images/jumbotron-hd.jpg");
+        background-image: url("images/jumbotron-sm.webp"), url("images/jumbotron-sm.jpg");
         background-position: center;
         background-size: cover;
         height: 300px;
@@ -279,14 +423,23 @@ body{
     h6{
         font-size: 2em;
     }
-    .privacy-container{
+    /* .privacy-container{
         font-size: .8em;
-        /* border: solid green 1px; */
+        border: solid green 1px;
         width: 80%;
         height: auto;
         text-align: center;
         margin: 10px 0 0 10%;
         font-family: copperplate;
         justify-items: center;
+    } */
+    #sticky-footer-services{
+        position: fixed;
+    }
+    #sticky-footer-about{
+        position: relative;
+    }
+    #sticky-footer-foundation{
+        position: relative;
     }
 }
