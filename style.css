@@ -15,7 +15,7 @@ body{
     font-family: copperplate;
 }
 .serving{
-    font-size: .1em;
+    font-size: 10px;
 }
 .collapse.navbar-collapse{
     justify-content: flex-end;
@@ -392,7 +392,7 @@ body{
         font-size: .8em;
     }
     .serving{
-        font-size: .5em;
+        font-size: .6em;
     }
     .jumbotron.img-fluid{
         background-image: url("images/jumbotron-sm.webp"), url("images/jumbotron-sm.jpg");
